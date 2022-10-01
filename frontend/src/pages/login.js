@@ -23,10 +23,10 @@ const LoginPage = () => {
         password,
     } = formData;
 
-    useEffect(( () => {
+    useEffect( () => {
         if(dispatch && dispatch !== null && dispatch !== undefined)
             dispatch(reset_register_success());
-    }));
+    }, [dispatch]);
 
     const onChange = e => setFormData({...formData, [e.target.name]: e.target.value});
 
@@ -44,7 +44,7 @@ const LoginPage = () => {
     
     return(
     
-        <Layout title= '스꾸친 | Register' content='Register page'>
+        <Layout title= '스꾸친 | Login' content='Register page'>
             <h1 className='display-4'>Login Page</h1>
             <form className='bg-light p-5 mt-5 mb-5' onSubmit={onSubmit}>
                 <h3>Log Into Your Account</h3>

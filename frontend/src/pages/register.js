@@ -51,6 +51,7 @@ const RegisterPage = () => {
             <h1 className='display-4'>Resiter Page</h1>
             <form className='bg-light p-5 mt-5 mb-5' onSubmit={onSubmit}>
                 <h3>Create An Account</h3>
+                {/* firstname */}
                 <div className='form-group'>
                     <label className='form-label mt-3' htmlFor='first_name'>
                         <strong>First Name*</strong>
@@ -60,6 +61,7 @@ const RegisterPage = () => {
                         placeholder ='First Name' onChange={onChange} value={first_name}
                         required />
                 </div>
+                {/* lastname */}
                 <div className='form-group'>
                     <label className='form-label mt-3' htmlFor='last_name'>
                         <strong>Last Name*</strong>
@@ -69,6 +71,7 @@ const RegisterPage = () => {
                         placeholder ='Last Name' onChange={onChange} value={last_name}
                         required />
                 </div>
+                {/* 아이디 */}
                 <div className='form-group'>
                     <label className='form-label mt-3' htmlFor='username'>
                         <strong>Username*</strong>
@@ -78,6 +81,7 @@ const RegisterPage = () => {
                         placeholder ='Username' onChange={onChange} value={username}
                         required />
                 </div>
+                {/* 비밀번호 */}
                 <div className='form-group'>
                     <label className='form-label mt-3' htmlFor='password'>
                         <strong>Password*</strong>
@@ -88,6 +92,7 @@ const RegisterPage = () => {
                         minLength='8'
                         required />
                 </div>
+                {/* 비밀번호 확인 */}
                 <div className='form-group'>
                     <label className='form-label mt-3' htmlFor='re_password'>
                         <strong>Confirm Password*</strong>
